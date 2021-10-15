@@ -24,7 +24,7 @@ func sumAll(nums ...int) int {
 		return 0
 	}
 	var retSum int = 0
-	for _, tmp := range nums {
+	for _, tmp := range nums { //此处 _符号用于表示忽略索引，因为我们这里不会用到索引值，否则可以使用一个变量代替_ ,并打印出来
 		retSum += tmp
 	}
 	return retSum
